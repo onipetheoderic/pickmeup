@@ -10,7 +10,7 @@ import {
 } from './styles';
 import TextInput from '../textInput';
 
-const Select = ({collection, value, name, text, handleForm}) => {
+const Select = ({collection, value, handleForm}) => {
   const currentValue = value.length === 0 ? collection[0] : value;
   const [showOptions, changeShowOption] = useState(false);
 
@@ -59,11 +59,7 @@ const Select = ({collection, value, name, text, handleForm}) => {
           </TextView>
         </CustomTouch>
 
-        <CustomView
-          style={{
-            width: '68%',
-            height: '100%',
-          }}>
+        <CustomView>
           <TextInput handleForm={handleForm} placeholder="07039148866" />
         </CustomView>
       </SelectView>

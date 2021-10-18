@@ -37,7 +37,10 @@ export const AbsoluteView = styled.View`
   z-index: 100;
 `;
 
-export const CustomView = styled.View``;
+export const CustomView = styled.View`
+  width: 60%;
+  height: 100%;
+`;
 
 export const TextView = styled.Text`
   font-size: ${props => (props.theme.fontSize ? props.theme.fontSize : '15px')};
